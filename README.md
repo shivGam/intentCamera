@@ -4,7 +4,7 @@
     <img src="higher_quality_img.png" width="250">
   
 </p>
-**Linkedin:** [Shivdatt Jangam](https://www.linkedin.com/in/shivdatt-jangam-96b814254/)
+**Linkedin :** [Shivdatt Jangam](https://www.linkedin.com/in/shivdatt-jangam-96b814254/)
 
 Buges:
 -Runs fine for Android version 11 and below.
