@@ -1,7 +1,7 @@
 # intentCamera
 <p float="middle">
-    <img src="intentCameraGIf.gif" width="300">
-    <img src="intentCamera.png" width="250">
+    <img src="intentCameraGif.gif" width="300">
+    <img src="higher_quality_img.png" width="250">
   
 </p>
 **Linkedin:** [Shivdatt Jangam](https://www.linkedin.com/in/shivdatt-jangam-96b814254/)
