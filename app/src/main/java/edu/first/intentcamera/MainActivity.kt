@@ -30,10 +30,6 @@ class MainActivity : AppCompatActivity() {
         takePicture.setOnClickListener {
             val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             photoFile = getPhotoFile(FILE_NAME)
-
-            // This DOESN'T work for API >= 24 (starting 2016)
-            // takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoFile)
-
             val fileProvider = FileProvider.getUriForFile(this, "edu.first.intentcamera.fileprovider", photoFile)
             takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileProvider)
             if (takePictureIntent.resolveActivity(this.packageManager) != null) {
@@ -45,9 +41,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getPhotoFile(fileName: String): File {
-        // Use `getExternalFilesDir` on Context to access package-specific directories.
-        val storageDirectory = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(fileName, ".jpg", storageDirectory)
+        val storage= getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+        return File.createTempFile(fileName, ".jpg", storage)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
