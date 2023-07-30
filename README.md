@@ -9,7 +9,5 @@
 
 **Linkedin:** [Shivdatt Jangam](https://www.linkedin.com/in/shivdatt-jangam-96b814254/)
 
-Buges:
+Bug:
 - Runs on Android version 11 and below.
-- Cannot display image Captured horizontally and then oriented vertically
-
